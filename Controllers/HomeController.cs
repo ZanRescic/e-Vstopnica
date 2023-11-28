@@ -17,6 +17,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Dogodki()
+    {
+        return View();
+    }
+    public IActionResult MojeVstopnice()
+    {
+        return View();
+    }
 
     public IActionResult Privacy()
     {
