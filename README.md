@@ -1,5 +1,6 @@
 # e-Vstopnice
 Naslov seminarske naloge: E-VSTOPNICE
+
 ČLANA EKIPE:
 63220274 Žan Reščič
 63220513 Mark Škof
