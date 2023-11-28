@@ -1,7 +1,45 @@
 @{
     ViewData["Title"] = "Dogodki";
 }
-<div class="text-center">
-    <h1 class="display-4">@ViewData["Title"]</h1>
-    <p>Stran prikazuje vse prihajajoče dogodke</p>
-</div>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/dogodki.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
+    <div>
+        <ul>
+            <li>Dogodek</li>
+            <li>Lokacija</li>
+            <li>Datum</li>
+        </ul>
+        <hr>
+        <ul>
+            <li>Rod Steward</li>
+            <li>Arena Stožice</li>
+            <li>20.5.2024</li>
+        </ul>
+        <ul>
+            <li>Ozzy Osbourne</li>
+            <li>Wembley Stadium</li>
+            <li>2.2.2024</li>
+        </ul>
+        <ul>
+            <li>Jan Plestenjak</li>
+            <li>Križanke</li>
+            <li>28.12.2023</li>
+        </ul>
+        <ul>
+            <li>Fehatrji</li>
+            <li>Smučišče Kope</li>
+            <li>15.12.2023</li>
+        </ul>
+        <ul>
+            <li>Metalica</li>
+            <li>AT&T Stadium</li>
+            <li>18.8.2024</li>
+        </ul>
+    </div>
+</body>
