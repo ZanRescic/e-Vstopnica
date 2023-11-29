@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
-using AppContext = e_Vstopnice.Data.MyContext;
+using Microsoft.AspNetCore.Identity;
+using e_Vstopnice.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppContext>(options =>
+builder.Services.AddDbContext<UserContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DB")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<UserContext>();
 
 var app = builder.Build();
 
