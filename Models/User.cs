@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace e_Vstopnice.Models;
 
-public class User : IdentityUser<int>
+public class User : IdentityUser
 {
 
     public string? FirstName { get; set; }

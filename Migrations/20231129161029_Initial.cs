@@ -58,7 +58,7 @@ namespace e_Vstopnice.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Time = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PlaceId = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    PlaceId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

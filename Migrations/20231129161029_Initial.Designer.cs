@@ -12,8 +12,8 @@ using e_Vstopnice.Data;
 namespace e_Vstopnice.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20231129160058_event_edited")]
-    partial class event_edited
+    [Migration("20231129161029_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
