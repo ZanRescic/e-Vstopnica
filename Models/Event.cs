@@ -12,5 +12,5 @@ public class Event
     public DateTime Time { get; set; }
     
     [ForeignKey("Place"), Required]
-    public DateTime PlaceId { get; set; }
+    public string? PlaceId { get; set; }
 }
