@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj": {}
+    "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj": {}
   },
   "projects": {
-    "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj": {
+    "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj",
+        "projectUniqueName": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj",
         "projectName": "e-Vstopnice",
-        "projectPath": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj",
-        "packagesPath": "/home/mark/.nuget/packages/",
-        "outputPath": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/obj/",
+        "projectPath": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj",
+        "packagesPath": "C:\\Users\\Zan\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mark/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Zan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
