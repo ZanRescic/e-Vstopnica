@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace e_Vstopnice.Data;
 
-public class UserContext : IdentityDbContext<IdentityUser>
+public class UserContext : IdentityDbContext<User>
 {
     public UserContext(DbContextOptions<UserContext> options)
         : base(options)
