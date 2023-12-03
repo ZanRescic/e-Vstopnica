@@ -10,10 +10,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<UserContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DB")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<e_Vstopnice.Models.User>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<UserContext>();
-    
+
 var app = builder.Build();
 app.MapRazorPages();
 
