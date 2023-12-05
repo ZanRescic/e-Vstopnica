@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using e_Vstopnice.Data;
 using e_Vstopnice.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace e_Vstopnice.Controllers
 {
+    [Authorize]
     public class EventController : Controller
     {
         private readonly UserContext _context;
@@ -44,6 +46,7 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event/Create
+        [Authorize(Roles = "Administrator, Organizator")]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +69,7 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event/Edit/5
+        [Authorize(Roles = "Administrator, Organizator, Osebje")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +121,7 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event/Delete/5
+        [Authorize(Roles = "Administrator, Osebje")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
