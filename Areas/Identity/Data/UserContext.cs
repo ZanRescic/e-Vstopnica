@@ -5,14 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace e_Vstopnice.Data;
 
-public class UserContext : IdentityDbContext<IdentityUser>
+public class UserContext : IdentityDbContext<ApplicationUser>
 {
     public UserContext(DbContextOptions<UserContext> options)
         : base(options)
     {
     }
         public DbSet<Event> Events { get; set; }
-        public DbSet<User> User { get; set; }
         public DbSet<Place> Place { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
 
@@ -20,7 +19,6 @@ public class UserContext : IdentityDbContext<IdentityUser>
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Event>().ToTable("Events");
-        modelBuilder.Entity<User>().ToTable("Users");
         modelBuilder.Entity<Ticket>().ToTable("Tickets");
         modelBuilder.Entity<Place>().ToTable("Places");
     }
