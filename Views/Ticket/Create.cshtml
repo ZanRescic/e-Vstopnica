@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Nakup karte</h1>
+<h1>Nakup vstopnice</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -12,7 +12,8 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <!--<label asp-for="EventId" class="control-label"></label>-->
-                <input asp-for="EventId" class="form-control" value="@Model.EventId" type="hidden" disabled/>
+                <label class="control-label">Oznaka dogodka.</label>
+                <input asp-for="EventId" class="form-control" value="@Model.EventId" disabled/>
                 <span asp-validation-for="EventId" class="text-danger"></span>
             </div>
             <div class="form-group">

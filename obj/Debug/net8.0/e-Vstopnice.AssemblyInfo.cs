@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("e-Vstopnice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fafa6c69909be26e7da29a26642090f8014ec491")]
 [assembly: System.Reflection.AssemblyProductAttribute("e-Vstopnice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("e-Vstopnice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
