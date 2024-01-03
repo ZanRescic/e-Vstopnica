@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace e_Vstopnice.Controllers
 {
-    [Authorize]
     public class EventController : Controller
     {
         private readonly UserContext _context;
@@ -69,7 +68,7 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event/Edit/5
-        [Authorize(Roles = "Administrator, Organizator, Osebje")]
+        [Authorize(Roles = "Administrator, Organizator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -121,7 +120,7 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event/Delete/5
-        [Authorize(Roles = "Administrator, Osebje")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

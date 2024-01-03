@@ -1,7 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<style>
+    p {
+        color: black;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 100;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
 <div class="text-center">
-    <p><a asp-action="Index" asp-controller="event"><img src="logo.png" alt="logo"></a></p>
+    <p>Dobrodošli na spletni strani E-VSTOPNICE.<br>
+    Stran prikazuje razne dogodke za katere ponujamo <a asp-action="Index" asp-controller="event">vstopnice.</a>
+    </p>
 </div>

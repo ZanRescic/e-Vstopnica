@@ -11,17 +11,17 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="StVstopnic" class="control-label">Oznaka dogodka.</label>
-                <input asp-for="StVstopnic" class="form-control" value="@Model.EventId"/>
+                <label asp-for="StVstopnic" class="control-label">Vnesite število kart, ki jih želite kupiti.</label>
+                <input asp-for="StVstopnic" class="form-control"/>
                 <span asp-validation-for="StVstopnic" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EventId" class="control-label">Vnesite število kart, ki jih želite kupiti.</label>
-                <input asp-for="EventId" class="form-control" />
+                <!--<label asp-for="EventId" class="control-label">Oznaka dogodka.</label>-->
+                <input asp-for="EventId" class="form-control" value="@Model.EventId" type="hidden"/>
                 <span asp-validation-for="EventId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Nakup" class="btn btn-primary" />
+                <input style="margin: 2px 0px 0px 0px;" type="submit" value="Nakup" class="btn btn-primary" />
             </div>
         </form>
     </div>
