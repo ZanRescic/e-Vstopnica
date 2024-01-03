@@ -11,10 +11,12 @@ public class Ticket
     public int Id { get; set; }
     
     [ForeignKey("User"), Required]
-    public int UserId { get; set; }
+    public ApplicationUser? UserId { get; set; }
     
     [ForeignKey("Event"), Required]
     public int? EventId { get; set; }
+
+    public int StVstopnic { get; set; }
     
 }
 

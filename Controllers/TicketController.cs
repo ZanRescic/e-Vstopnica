@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using e_Vstopnice.Data;
 using e_Vstopnice.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace e_Vstopnice.Controllers
 {
     public class TicketController : Controller
     {
         private readonly UserContext _context;
+        private readonly UserManager<ApplicationUser> _usermanager;
 
-        public TicketController(UserContext context)
+        public TicketController(UserContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _usermanager = userManager;
         }
 
         // GET: Ticket
@@ -56,10 +60,12 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,EventId")] Ticket ticket)
+        public async Task<IActionResult> Create([Bind("Id,EventId,StVstopnic")] Ticket ticket)
         {
+            var currentUser = await _usermanager.GetUserAsync(User);
             if (ModelState.IsValid)
             {
+                ticket.UserId = currentUser;
                 _context.Add(ticket);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -88,7 +94,7 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserId,EventId")] Ticket ticket)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,EventId,StVstopnic")] Ticket ticket)
         {
             if (id != ticket.Id)
             {
