@@ -40,7 +40,7 @@
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
-                <a href = "https://is-eventim.azurewebsites.net/Ticket/Create">Vstopnice</a>
+                <a asp-action="Create" asp-controller="ticket" asp-route-id="@item.Id">Vstopnice</a>
             </td>
         </tr>
 }
