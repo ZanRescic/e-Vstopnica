@@ -5,7 +5,6 @@
 }
 
 <h1>Create</h1>
-
 <h4>Ticket</h4>
 <hr />
 <div class="row">
@@ -19,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="EventId" class="control-label"></label>
-                <input asp-for="EventId" class="form-control" />
+                <input asp-for="EventId" class="form-control" value="@Model.Id"/>
                 <span asp-validation-for="EventId" class="text-danger"></span>
             </div>
             <div class="form-group">
