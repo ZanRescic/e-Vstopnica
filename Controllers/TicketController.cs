@@ -60,7 +60,7 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,EventId,StVstopnic")] Ticket ticket)
+        public async Task<IActionResult> Create([Bind("Id,StVstopnic,EventId")] Ticket ticket)
         {
             var currentUser = await _usermanager.GetUserAsync(User);
             if (ModelState.IsValid)
@@ -94,7 +94,7 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,EventId,StVstopnic")] Ticket ticket)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,StVstopnic,EventId")] Ticket ticket)
         {
             if (id != ticket.Id)
             {
