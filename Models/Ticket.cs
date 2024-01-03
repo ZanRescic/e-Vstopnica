@@ -14,7 +14,7 @@ public class Ticket
     public int UserId { get; set; }
     
     [ForeignKey("Event"), Required]
-    public int EventId { get; set; }
+    public int? EventId { get; set; }
     
 }
 

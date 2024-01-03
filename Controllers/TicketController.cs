@@ -46,7 +46,9 @@ namespace e_Vstopnice.Controllers
         // GET: Ticket/Create
         public IActionResult Create(int? id)
         {
-            return View(id);
+            Ticket ticket = new Ticket();
+            ticket.EventId = id;
+            return View(ticket);
         }
 
         // POST: Ticket/Create
