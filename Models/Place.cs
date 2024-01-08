@@ -11,7 +11,4 @@ public class Place
     
     [Required]
     public string? Address { get; set; }
-    
-    [Required]
-    public int NumberOfSpots { get; set; }
 }

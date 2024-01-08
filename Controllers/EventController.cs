@@ -21,9 +21,15 @@ namespace e_Vstopnice.Controllers
         }
 
         // GET: Event
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Events.ToListAsync());
+            var events = from e in _context.Events 
+                        select e;
+            if (!String.IsNullOrEmpty(searchString)){
+                events = events.Where(s => s.Name.Contains(searchString));
+            }
+            return View(await events.ToListAsync());
+            //return View(await _context.Events.ToListAsync());
         }
 
         // GET: Event/Details/5
@@ -56,7 +62,7 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Time,PlaceId")] Event @event)
+        public async Task<IActionResult> Create([Bind("Id,Name,Time,NumberOfSpots,PlaceId")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +95,7 @@ namespace e_Vstopnice.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Time,PlaceId")] Event @event)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Time,NumberOfSpots,PlaceId")] Event @event)
         {
             if (id != @event.Id)
             {

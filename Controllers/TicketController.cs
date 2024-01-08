@@ -26,6 +26,12 @@ namespace e_Vstopnice.Controllers
         // GET: Ticket
         public async Task<IActionResult> Index()
         {
+            /*var currentUser = await _usermanager.GetUserAsync(User);
+            var tickets = from t in _context.Tickets
+                        select t;
+            tickets = tickets.Where(s => s.UserId.Equals(currentUser)); // or currentUser.Id
+            return View(await tickets.ToListAsync());*/
+
             return View(await _context.Tickets.ToListAsync());
         }
 

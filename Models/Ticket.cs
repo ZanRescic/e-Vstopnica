@@ -13,6 +13,7 @@ public class Ticket
     
     [ForeignKey("Event"), Required]
     public int? EventId { get; set; }
+    //[ForeignKey("AspNetUsers"), Required]
     public ApplicationUser? UserId { get; set; }
 
 }
