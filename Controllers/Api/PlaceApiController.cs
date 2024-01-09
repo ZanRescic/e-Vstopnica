@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using e_Vstopnice.Data;
 using e_Vstopnice.Models;
+using e_Vstopnice.Filters;
 
 namespace e_Vstopnice.Controllers_Api
 {
     [Route("api/v1/place")]
     [ApiController]
+    [ApiKeyAuth]
     public class PlaceApiController : ControllerBase
     {
         private readonly UserContext _context;

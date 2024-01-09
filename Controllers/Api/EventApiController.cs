@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using e_Vstopnice.Data;
 using e_Vstopnice.Models;
+using e_Vstopnice.Filters;
 
 namespace e_Vstopnice.Controllers_Api
 {
@@ -45,6 +46,7 @@ namespace e_Vstopnice.Controllers_Api
         // PUT: api/EventApi/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> PutEvent(int id, Event @event)
         {
             if (id != @event.Id)
@@ -76,6 +78,7 @@ namespace e_Vstopnice.Controllers_Api
         // POST: api/EventApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [ApiKeyAuth]
         public async Task<ActionResult<Event>> PostEvent(Event @event)
         {
             _context.Events.Add(@event);
@@ -86,6 +89,7 @@ namespace e_Vstopnice.Controllers_Api
 
         // DELETE: api/EventApi/5
         [HttpDelete("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> DeleteEvent(int id)
         {
             var @event = await _context.Events.FindAsync(id);
