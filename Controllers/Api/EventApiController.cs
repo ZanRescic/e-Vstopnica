@@ -13,6 +13,7 @@ namespace e_Vstopnice.Controllers_Api
 {
     [Route("api/v1/event")]
     [ApiController]
+    [ApiKeyAuth]
     public class EventApiController : ControllerBase
     {
         private readonly UserContext _context;
