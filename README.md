@@ -26,3 +26,22 @@ Predvidene entitete: Uporabnik, Event, Prostor, Karta.
 ### UI mobilne aplikacije (dodaja dogodka)
 
 ![Mobile add event UI](slike/mobile_add_event.png)
+
+
+
+### UI web aplikacije (login)
+
+![Mobile add event UI](slike/web_login.png)
+
+
+
+### UI web aplikacije (prikaz dogodkov)
+
+![Mobile add event UI](slike/web_events.png)
+
+
+
+### UI web aplikacije (prikaz vstopnic)
+
+![Mobile add event UI](slike/web_tickets.png)
+
