@@ -11,10 +11,8 @@ IS omogoča ogled dogodkov, nakup kart za specifičen dogodek, ustvarjanje dogod
 Predvidene entitete: Uporabnik, Event, Prostor, Karta.
 
 ## RAZDELITEV DELA
-Mark:
-  - postavil temelje spletne aplikacije in naredil mobilno aplikacijo
-Žan
-  - naredil spletno aplikacijo in API-je, in postavitev vseh storitev azurja
+Mark: postavil temelje spletne aplikacije in naredil mobilno aplikacijo
+Žan: naredil spletno aplikacijo in API-je, in postavitev vseh storitev azurja
 
 ## Slike
 
