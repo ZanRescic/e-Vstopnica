@@ -8571,19 +8571,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zan\\.nuget\\packages\\": {}
+    "/home/mark/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj",
+      "projectUniqueName": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj",
       "projectName": "e-Vstopnice",
-      "projectPath": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\e-Vstopnice.csproj",
-      "packagesPath": "C:\\Users\\Zan\\.nuget\\packages\\",
-      "outputPath": "D:\\Faks-Zan\\2. LETNIK\\1. SEMESTER\\IS\\SeminarskaNaloga\\e-Vstopnica\\obj\\",
+      "projectPath": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/e-Vstopnice.csproj",
+      "packagesPath": "/home/mark/.nuget/packages/",
+      "outputPath": "/home/mark/Documents/University/Informacijski_sistemi/Project/e-Vstopnica/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/mark/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -8663,7 +8663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
